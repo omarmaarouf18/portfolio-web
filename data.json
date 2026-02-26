@@ -1,0 +1,22 @@
+{
+  "personalInfo": {
+    "name": "Omar Maarouf",
+    "title": "Security Engineer",
+    "bio": "Security Engineer with practical experience in building secure architectures and a future focus on Red Teaming. Expert in Python automation and Active Directory exploitation.",
+    "email": "sec-eng@omar-maarouf.me",
+    "phone": "+201034165405",
+    "skills": ["Penetration Testing", "Red Teaming", "Python Security", "Active Directory", "C++", "Network Security"]
+  },
+  "projects": [
+    {
+      "name": "Gym Management System",
+      "description": "Secure Python application for gym data management with focus on data protection.",
+      "github": "https://github.com/omarmaarouf18/Gym-Management-System"
+    },
+    {
+      "name": "Legal Case Database",
+      "description": "Secure database solution for legal professionals to manage cases efficiently.",
+      "github": "https://github.com/omarmaarouf18/Legal-Case-Database"
+    }
+  ]
+}

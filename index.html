@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omar Maarouf | Security Engineer & Pentester</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="ms-header">
+        <div class="header-left">
+           <div class="ms-logo-box"><i class="fas fa-user-shield" style="font-size: 14px;"></i></div>
+            <span class="brand-name">Omar Maarouf</span>
+        </div>
+        <div class="header-right">
+            <span class="status"><i class="fas fa-check-circle"></i> Available for Security Projects</span>
+        </div>
+    </header>
+
+    <div class="app-container">
+        <nav class="sidebar">
+            <ul class="nav-links">
+                <li><a href="#" data-section="home" class="active"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#" data-section="services"><i class="fas fa-shield-virus"></i> Services</a></li>
+                <li><a href="#" data-section="projects"><i class="fas fa-th-large"></i> Projects</a></li>
+                <li><a href="#" data-section="contact"><i class="fas fa-comment-alt"></i> Contact</a></li>
+            </ul>
+            <div class="sidebar-contact-info">
+                <p><i class="fas fa-envelope"></i> sec-eng@omar-maarouf.me</p>
+                <p><i class="fas fa-phone"></i> +201034165405</p>
+            </div>
+        </nav>
+
+        <main class="content-area">
+            <section id="home" class="page active">
+                <div class="hero">
+                    <span class="badge">Professional Profile</span>
+                    <h1>Security Engineer & Penetration Tester</h1>
+                    <p class="bio-text">
+                        متخصص في بناء وتأمين البنية التحتية الرقمية، مع خبرة عملية كمهندس أمن. 
+                        أركز بشكل أساسي على **Red Teaming** واستغلال ثغرات الـ **Active Directory**، بالإضافة إلى تطوير أدوات أمنية مخصصة باستخدام **Python** و **C++** لضمان أعلى مستويات الحماية.
+                    </p>
+                    <div class="tags-container" id="skills-list"></div>
+                </div>
+            </section>
+
+            <section id="services" class="page">
+                <h2 class="section-title">Professional Services</h2>
+                <div class="ms-grid">
+                    <div class="ms-card">
+                        <i class="fas fa-user-secret service-icon"></i>
+                        <h3>Penetration Testing</h3>
+                        <p>اختبار اختراق شامل للشبكات والتطبيقات لاكتشاف الثغرات قبل استغلالها.</p>
+                    </div>
+                    <div class="ms-card">
+                        <i class="fas fa-network-wired service-icon"></i>
+                        <h3>Active Directory Security</h3>
+                        <p>تحليل وتأمين بيئات الـ Windows Domain واختبار صمودها أمام هجمات الـ Privilege Escalation.</p>
+                    </div>
+                    <div class="ms-card">
+                        <i class="fas fa-code-branch service-icon"></i>
+                        <h3>Security Automation</h3>
+                        <p>بناء سكربتات وأدوات أمنية مخصصة للمراقبة والاستجابة للحوادث باستخدام Python.</p>
+                    </div>
+                    <div class="ms-card">
+                        <i class="fas fa-shield-alt service-icon"></i>
+                        <h3>Vulnerability Assessment</h3>
+                        <p>فحص دوري للأنظمة وتقييم المخاطر الأمنية مع تقديم تقارير فنية وحلول للإصلاح.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="projects" class="page">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="projects-grid" id="projects-container"></div>
+            </section>
+
+            <section id="contact" class="page">
+                <h2 class="section-title">Get in touch</h2>
+                <form id="contact-form" class="ms-form">
+                    <div class="form-row">
+                        <input type="text" id="c-name" placeholder="Name" required>
+                        <input type="email" id="c-email" placeholder="Email" required>
+                    </div>
+                    <textarea id="c-msg" placeholder="How can I help you?" rows="5" required></textarea>
+                    <button type="submit" class="ms-btn">Send Message</button>
+                </form>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
