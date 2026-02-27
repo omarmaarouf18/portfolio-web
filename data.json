@@ -1,22 +1,133 @@
 {
-  "personalInfo": {
+  "meta": {
     "name": "Omar Maarouf",
-    "title": "Security Engineer",
-    "bio": "Security Engineer with practical experience in building secure architectures and a future focus on Red Teaming. Expert in Python automation and Active Directory exploitation.",
-    "email": "sec-eng@omar-maarouf.me",
-    "phone": "+201034165405",
-    "skills": ["Penetration Testing", "Red Teaming", "Python Security", "Active Directory", "C++", "Network Security"]
+    "brand": "ENTERPRISE.OS"
   },
-  "projects": [
+  "hero": {
+    "headline": {
+      "en": "Security Engineering That Scales",
+      "ar": "هندسة أمن سيبراني تتوسع بثقة"
+    },
+    "subhead": {
+      "en": "Offensive testing, hardening, and resilience for web, network, and mobile environments.",
+      "ar": "اختبارات اختراق وتقوية الأنظمة والمرونة لتطبيقات الويب والشبكات وتطبيقات الجوال."
+    },
+    "ctaPrimary": {
+      "en": "Explore services",
+      "ar": "استكشف الخدمات"
+    },
+    "ctaSecondary": {
+      "en": "View projects",
+      "ar": "عرض المشاريع"
+    }
+  },
+  "about": {
+    "title": {
+      "en": "About Omar",
+      "ar": "نبذة عن عمر"
+    },
+    "body": {
+      "en": "I am a security engineer focused on pentesting and practical defense. I work across web applications, networks, Active Directory, and mobile apps to uncover weaknesses and deliver clear remediation plans.",
+      "ar": "أنا مهندس أمن سيبراني أركز على اختبارات الاختراق والدفاع العملي. أعمل على تطبيقات الويب والشبكات وActive Directory وتطبيقات الجوال لاكتشاف الثغرات وتقديم خطط معالجة واضحة."
+    }
+  },
+  "stats": [
     {
-      "name": "Gym Management System",
-      "description": "Secure Python application for gym data management with focus on data protection.",
-      "github": "https://github.com/omarmaarouf18/Gym-Management-System"
+      "value": "3+",
+      "label": {
+        "en": "Pentest domains",
+        "ar": "مجالات اختبار اختراق"
+      }
     },
     {
-      "name": "Legal Case Database",
-      "description": "Secure database solution for legal professionals to manage cases efficiently.",
-      "github": "https://github.com/omarmaarouf18/Legal-Case-Database"
+      "value": "AD",
+      "label": {
+        "en": "Active Directory focus",
+        "ar": "تركيز على Active Directory"
+      }
+    },
+    {
+      "value": "100%",
+      "label": {
+        "en": "Actionable reports",
+        "ar": "تقارير قابلة للتنفيذ"
+      }
+    },
+    {
+      "value": "24/7",
+      "label": {
+        "en": "Security mindset",
+        "ar": "عقلية أمنية دائمة"
+      }
     }
-  ]
+  ],
+  "services": [
+    {
+      "title": {
+        "en": "Web App Pentesting",
+        "ar": "اختبار اختراق تطبيقات الويب"
+      },
+      "category": "web",
+      "desc": {
+        "en": "Authentication, authorization, injection, and business logic testing with clear remediation steps.",
+        "ar": "اختبار المصادقة والتفويض والثغرات المنطقية مع خطوات معالجة واضحة."
+      }
+    },
+    {
+      "title": {
+        "en": "Network & AD Security",
+        "ar": "أمن الشبكات وActive Directory"
+      },
+      "category": "network",
+      "desc": {
+        "en": "Active Directory assessment, lateral movement paths, and hardening for enterprise networks.",
+        "ar": "تقييم Active Directory ومسارات الحركة الجانبية وتقوية الشبكات المؤسسية."
+      }
+    },
+    {
+      "title": {
+        "en": "Mobile App Pentesting",
+        "ar": "اختبار اختراق تطبيقات الجوال"
+      },
+      "category": "mobile",
+      "desc": {
+        "en": "iOS/Android security reviews, API validation, and data protection checks.",
+        "ar": "مراجعات أمن iOS وAndroid والتحقق من واجهات API وحماية البيانات."
+      }
+    }
+  ],
+  "projects": [
+    {
+      "name": "Mini System Manage",
+      "description": "A lightweight management system project focused on clean structure and practical workflows.",
+      "github": "https://github.com/omarmaarouf18/mini-system-manege",
+      "category": "software"
+    }
+  ],
+  "projectEmpty": {
+    "title": {
+      "en": "Projects coming soon",
+      "ar": "المشاريع قيد الإعداد"
+    },
+    "description": {
+      "en": "I am preparing case studies and public write-ups. Check back soon.",
+      "ar": "أقوم بتجهيز دراسات حالة وملخصات عامة. تابعني قريباً."
+    }
+  },
+  "contact": {
+    "title": {
+      "en": "Get in touch",
+      "ar": "تواصل معي"
+    },
+    "email": "sec-eng@omar-maarouf.me",
+    "phone": "+201034165405",
+    "formNote": {
+      "en": "For real messages, connect a service like Formspree.",
+      "ar": "لإرسال رسائل حقيقية اربط الخدمة عبر Formspree."
+    }
+  },
+  "socials": {
+    "github": "https://github.com/omarmaarouf18",
+    "linkedin": "https://www.linkedin.com/in/omar-maarouf-12776737a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+  }
 }

@@ -3,93 +3,142 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Omar Maarouf | Security Engineer & Pentester</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta name="description" content="Security engineer portfolio: web, network, Active Directory, and mobile pentesting.">
+    <title>Security Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: 'Space Grotesk', sans-serif;
+            background: radial-gradient(1100px 500px at 85% -200px, #dbeafe 0%, rgba(219, 234, 254, 0) 70%), #f8fafc;
+            color: #0f172a;
+        }
+        .nav-glass { background: rgba(255,255,255,.88); backdrop-filter: blur(12px); }
+        .brand-grad { background: linear-gradient(130deg, #0ea5e9 0%, #0f766e 100%); }
+        .text-grad {
+            background: linear-gradient(90deg, #0284c7 0%, #0f766e 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        .chip.active { background: #0369a1; color: #fff; border-color: #0369a1; }
+        .lang-btn.active { background: #0f172a; color: #fff; border-color: #0f172a; }
+    </style>
 </head>
 <body>
+    <header class="fixed top-0 left-0 right-0 z-50 border-b border-slate-100 nav-glass">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 h-16 sm:h-20 flex items-center justify-between" aria-label="Main navigation">
+            <a href="#home" class="flex items-center gap-2">
+                <span class="w-9 h-9 brand-grad rounded-lg text-white font-bold flex items-center justify-center">E</span>
+                <span id="brand-name" class="font-bold tracking-tight text-base sm:text-xl">PORTFOLIO</span>
+            </a>
 
-    <header class="ms-header">
-        <div class="header-left">
-           <div class="ms-logo-box"><i class="fas fa-user-shield" style="font-size: 14px;"></i></div>
-            <span class="brand-name">Omar Maarouf</span>
-        </div>
-        <div class="header-right">
-            <span class="status"><i class="fas fa-check-circle"></i> Available for Security Projects</span>
-        </div>
-    </header>
+            <button id="menu-btn" class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-lg border border-slate-200 bg-white" aria-expanded="false" aria-controls="mobile-menu" aria-label="Toggle menu">
+                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
 
-    <div class="app-container">
-        <nav class="sidebar">
-            <ul class="nav-links">
-                <li><a href="#" data-section="home" class="active"><i class="fas fa-home"></i> Home</a></li>
-                <li><a href="#" data-section="services"><i class="fas fa-shield-virus"></i> Services</a></li>
-                <li><a href="#" data-section="projects"><i class="fas fa-th-large"></i> Projects</a></li>
-                <li><a href="#" data-section="contact"><i class="fas fa-comment-alt"></i> Contact</a></li>
-            </ul>
-            <div class="sidebar-contact-info">
-                <p><i class="fas fa-envelope"></i> sec-eng@omar-maarouf.me</p>
-                <p><i class="fas fa-phone"></i> +201034165405</p>
+            <div class="hidden md:flex items-center gap-7 text-sm font-medium text-slate-600">
+                <a href="#home" class="hover:text-sky-600">Home</a>
+                <a href="#about" class="hover:text-sky-600">About</a>
+                <a href="#services" class="hover:text-sky-600">Services</a>
+                <a href="#projects" class="hover:text-sky-600">Projects</a>
+                <a href="#contact" class="hover:text-sky-600">Contact</a>
+            </div>
+
+            <div class="hidden md:flex items-center gap-2">
+                <button class="lang-btn active px-3 py-1.5 rounded-lg border border-slate-200 text-xs font-semibold" data-lang="en" type="button">EN</button>
+                <button class="lang-btn px-3 py-1.5 rounded-lg border border-slate-200 text-xs font-semibold" data-lang="ar" type="button">AR</button>
             </div>
         </nav>
 
-        <main class="content-area">
-            <section id="home" class="page active">
-                <div class="hero">
-                    <span class="badge">Professional Profile</span>
-                    <h1>Security Engineer & Penetration Tester</h1>
-                    <p class="bio-text">
-                        متخصص في بناء وتأمين البنية التحتية الرقمية، مع خبرة عملية كمهندس أمن. 
-                        أركز بشكل أساسي على **Red Teaming** واستغلال ثغرات الـ **Active Directory**، بالإضافة إلى تطوير أدوات أمنية مخصصة باستخدام **Python** و **C++** لضمان أعلى مستويات الحماية.
-                    </p>
-                    <div class="tags-container" id="skills-list"></div>
+        <div id="mobile-menu" class="hidden md:hidden border-t border-slate-100 bg-white">
+            <div class="px-4 py-4 flex flex-col gap-3 text-slate-700 font-medium">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+                <div class="pt-2 flex items-center gap-2">
+                    <button class="lang-btn active px-3 py-1.5 rounded-lg border border-slate-200 text-xs font-semibold" data-lang="en" type="button">EN</button>
+                    <button class="lang-btn px-3 py-1.5 rounded-lg border border-slate-200 text-xs font-semibold" data-lang="ar" type="button">AR</button>
                 </div>
-            </section>
+            </div>
+        </div>
+    </header>
 
-            <section id="services" class="page">
-                <h2 class="section-title">Professional Services</h2>
-                <div class="ms-grid">
-                    <div class="ms-card">
-                        <i class="fas fa-user-secret service-icon"></i>
-                        <h3>Penetration Testing</h3>
-                        <p>اختبار اختراق شامل للشبكات والتطبيقات لاكتشاف الثغرات قبل استغلالها.</p>
-                    </div>
-                    <div class="ms-card">
-                        <i class="fas fa-network-wired service-icon"></i>
-                        <h3>Active Directory Security</h3>
-                        <p>تحليل وتأمين بيئات الـ Windows Domain واختبار صمودها أمام هجمات الـ Privilege Escalation.</p>
-                    </div>
-                    <div class="ms-card">
-                        <i class="fas fa-code-branch service-icon"></i>
-                        <h3>Security Automation</h3>
-                        <p>بناء سكربتات وأدوات أمنية مخصصة للمراقبة والاستجابة للحوادث باستخدام Python.</p>
-                    </div>
-                    <div class="ms-card">
-                        <i class="fas fa-shield-alt service-icon"></i>
-                        <h3>Vulnerability Assessment</h3>
-                        <p>فحص دوري للأنظمة وتقييم المخاطر الأمنية مع تقديم تقارير فنية وحلول للإصلاح.</p>
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 pt-24 sm:pt-32 pb-16">
+        <section id="home" class="scroll-mt-24 sm:scroll-mt-32">
+            <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+                <div>
+                    <p class="uppercase text-xs font-semibold tracking-widest text-slate-500 mb-4">Security engineering</p>
+                    <h1 id="hero-title" class="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight text-grad"></h1>
+                    <p id="hero-subtitle" class="mt-5 text-base sm:text-lg text-slate-600 max-w-2xl"></p>
+                    <div class="mt-8 flex flex-wrap gap-3">
+                        <a id="cta-primary" href="#services" class="px-6 py-3 rounded-xl text-white brand-grad shadow-sm font-semibold"></a>
+                        <a id="cta-secondary" href="#projects" class="px-6 py-3 rounded-xl bg-white border border-slate-200 font-semibold text-slate-700"></a>
                     </div>
                 </div>
-            </section>
+                <aside class="brand-grad rounded-3xl p-6 sm:p-8 text-white shadow-lg">
+                    <h2 class="text-lg sm:text-xl font-semibold mb-4">Highlights</h2>
+                    <div id="stats-grid" class="grid grid-cols-2 gap-3"></div>
+                </aside>
+            </div>
+        </section>
 
-            <section id="projects" class="page">
-                <h2 class="section-title">Featured Projects</h2>
-                <div class="projects-grid" id="projects-container"></div>
-            </section>
+        <section id="about" class="pt-16 sm:pt-20 scroll-mt-24 sm:scroll-mt-32">
+            <h2 id="about-title" class="text-2xl sm:text-3xl font-bold"></h2>
+            <p id="about-body" class="mt-4 text-slate-600 text-base sm:text-lg leading-relaxed max-w-4xl"></p>
+        </section>
 
-            <section id="contact" class="page">
-                <h2 class="section-title">Get in touch</h2>
-                <form id="contact-form" class="ms-form">
-                    <div class="form-row">
-                        <input type="text" id="c-name" placeholder="Name" required>
-                        <input type="email" id="c-email" placeholder="Email" required>
-                    </div>
-                    <textarea id="c-msg" placeholder="How can I help you?" rows="5" required></textarea>
-                    <button type="submit" class="ms-btn">Send Message</button>
-                </form>
-            </section>
-        </main>
-    </div>
+        <section id="services" class="pt-16 sm:pt-20 scroll-mt-24 sm:scroll-mt-32">
+            <h2 class="text-2xl sm:text-3xl font-bold" id="services-heading">Services</h2>
+            <div class="mt-6 flex flex-wrap gap-2">
+                <button class="chip active px-4 py-2 rounded-full border border-slate-200 text-sm font-medium" data-filter="all" type="button">All</button>
+                <button class="chip px-4 py-2 rounded-full border border-slate-200 text-sm font-medium" data-filter="web" type="button">Web</button>
+                <button class="chip px-4 py-2 rounded-full border border-slate-200 text-sm font-medium" data-filter="network" type="button">Network</button>
+                <button class="chip px-4 py-2 rounded-full border border-slate-200 text-sm font-medium" data-filter="mobile" type="button">Mobile</button>
+            </div>
+            <div id="services-grid" class="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6"></div>
+        </section>
+
+        <section id="projects" class="pt-16 sm:pt-20 scroll-mt-24 sm:scroll-mt-32">
+            <h2 class="text-2xl sm:text-3xl font-bold" id="projects-heading">Projects</h2>
+            <div id="projects-container" class="mt-6 grid sm:grid-cols-2 gap-4 sm:gap-6"></div>
+        </section>
+
+        <section id="contact" class="pt-16 sm:pt-20 scroll-mt-24 sm:scroll-mt-32">
+            <h2 id="contact-title" class="text-2xl sm:text-3xl font-bold"></h2>
+            <form id="contact-form" class="mt-6 max-w-xl bg-white border border-slate-100 rounded-2xl p-5 sm:p-7 shadow-sm">
+                <div class="mb-4">
+                    <label class="block text-sm font-semibold mb-2" for="c-name">Name</label>
+                    <input id="c-name" type="text" required class="w-full rounded-lg border border-slate-200 bg-slate-50 p-3 focus:outline-none focus:ring-2 focus:ring-sky-500">
+                </div>
+                <div class="mb-4">
+                    <label class="block text-sm font-semibold mb-2" for="c-email">Email</label>
+                    <input id="c-email" type="email" required class="w-full rounded-lg border border-slate-200 bg-slate-50 p-3 focus:outline-none focus:ring-2 focus:ring-sky-500">
+                </div>
+                <div class="mb-5">
+                    <label class="block text-sm font-semibold mb-2" for="c-msg">Message</label>
+                    <textarea id="c-msg" rows="4" required class="w-full rounded-lg border border-slate-200 bg-slate-50 p-3 focus:outline-none focus:ring-2 focus:ring-sky-500"></textarea>
+                </div>
+                <button type="submit" class="w-full rounded-xl text-white brand-grad py-3 font-semibold">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="border-t border-slate-100 mt-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 py-6">
+            <div id="footer-socials" class="flex flex-wrap gap-3 mb-4"></div>
+            <div class="text-sm text-slate-500" id="footer-text">Built as a static portfolio</div>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
