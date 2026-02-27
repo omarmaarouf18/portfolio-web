@@ -103,7 +103,6 @@ document.addEventListener('DOMContentLoaded', () => {
     initMobileMenu();
     initLanguageSwitcher();
     initServiceFilter();
-    initContactForm();
     closeMobileMenuOnLinkClick();
     loadData();
 });
@@ -327,18 +326,6 @@ function initServiceFilter() {
             });
             renderServices();
         });
-    });
-}
-
-function initContactForm() {
-    const form = document.getElementById('contact-form');
-    if (!form) return;
-
-    form.addEventListener('submit', (event) => {
-        event.preventDefault();
-        const formNote = getText(state.data?.contact?.formNote) || 'Thank you. This static form is ready to connect to Formspree or Netlify Forms.';
-        alert(formNote);
-        form.reset();
     });
 }
 
